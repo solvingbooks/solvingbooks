@@ -1,0 +1,430 @@
+
+/**
+*  Fonts
+*/
+
+@font-face {
+	font-family:"Blanch Caps";
+	src: url("../assets/BLANCH_CAPS.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo BoldItalic";
+	src: url("../assets/aleo/Aleo-BoldItalic.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Lightitalic";
+	src: url("../assets/aleo/Aleo-LightItalic.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Aleo Light";
+	src: url("../assets/aleo/Aleo-Light.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family:"Blanch Caps Light";
+	src: url("../assets/BLANCH_CAPS_LIGHT.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/**
+* Generic rules
+*/
+
+body{
+	font-family: "Blanch Caps", Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+/**
+* Layout
+*/
+
+header{
+	height:70px;
+	background-color:white;
+	/*position:fixed;
+	z-index:1000;*/
+	background-color: white;
+
+}
+
+header h1{
+	left:0;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:20px;
+}
+
+header h1 a{
+	background: url(../assets/logo.png) no-repeat;
+	background-size: 55%;
+	display:block;
+	height:83px;
+	outline:none;
+	text-indent:-9999px;
+	width:291px;
+}
+
+#navigation{
+	top:20px;
+	position:absolute;
+	right:0;
+}
+
+nav {
+	float: left;
+}
+
+nav h2{
+	display:none;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+}
+
+nav ul li{
+	display:inline;
+	list-style-type: none;
+	padding:0 19px;
+}
+
+/*
+nav ul li:last-child{
+	border:0;
+	padding-right:0;
+}
+*/
+
+nav ul li a{
+	color: #444242;
+	font-size:1.7em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color:#639ecb;
+}
+
+nav ul li ul { 
+	display:none;
+}
+
+#search {
+	float: left;
+	margin-top: 10px;
+	margin-left:50px;
+	
+}
+
+
+
+#search h2 { 
+	display: none;
+}
+
+form input::-webkit-search-cancel-button{
+    position:relative;
+    right:5px;  
+}
+
+form input:first-child {
+	height: 25px;
+	width: 159px;
+	border: none;
+	border-radius: 25.5px;
+	background-color: #c7d5e9;
+	opacity:0.7;
+	font-size: 12px;
+	padding-left: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	font-family: "Aleo Lightitalic", Arial, Helvetica, sans-serif;
+	
+}
+
+form input:first-child:focus {
+	outline: 0; /* Quitar el borde cuando se encuentra activo el elemento input*/
+}
+
+
+form input:nth-child(2) {
+	border: none;
+	background: url('../assets/Buscar_MP.png') no-repeat;
+	height: 28px;
+	width: 28px;
+	display: inline-block;
+	background-size: 80%;
+	padding-bottom: 11px;
+}
+
+form input:nth-child(2):focus {
+	outline: 0; /* Quitar el borde cuando se encuentra activo al elemento input*/
+}
+
+#spotlight{
+	background: url('../assets/f1.jpg') no-repeat center center;
+	background-size: 75%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.infoSpotlight h2{
+	display: none;
+}
+
+#spotlight .columnas{
+	
+	height: 600px;
+}
+
+.infoSpotlight h3{
+	left: 0;
+	margin: 0;
+	font-size: 3em;
+	color: #444242;
+	font-weight: 100;
+	font-family: "Blanch Caps", Arial, Helvetica, sans-serif;
+}
+
+.infoSpotlight .blue {
+	color: #3678a1;
+}
+
+.infoSpotlight .bolditalic {
+	font-family: "Aleo BoldItalic";
+}
+
+.infoSpotlight p {
+	font-family: "Aleo Lightitalic";
+	margin: 0 0 1em 2em;
+	line-height: 1.2;
+	width: 18em;
+	color: #444242;
+}
+
+.infoSpotlight .button {
+	background: rgba(54, 120, 161, 0.4);
+	border-radius: 4px;
+	color: #ffffff;
+	font-family: "Blanch Caps";
+	font-size: 1.6em;
+	margin-left: 2.8em;
+	padding: 0 .8em;
+}
+
+.infoSpotlight{
+	bottom: 10%;
+	position: absolute;
+	margin-bottom: 60px;
+}
+
+@media (max-width: 930px) {		
+	nav {
+		display: none;
+	}
+	#search {
+		display: none;
+	}
+}
+/**
+* Classes
+*/
+
+.wrapper{
+	margin: 0 auto;
+	position: relative;
+	width: 75%;
+}
+
+.encabezado{
+	position: fixed;
+	width: 1349px;
+	height: 70px;
+	z-index:1;
+	background-color:white;
+}
+
+.resaltar {
+	color: #639ecb;
+}
+
+#cursos {
+	text-align: middle;
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+
+}
+#cursos img{
+	width: 95%;
+}
+
+#nuevos_cursos{
+	
+	width: 100%;
+	/*padding-top: 50px;*/
+	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+}
+
+
+#nuevos_cursos1{
+	
+	background: url('../assets/nuevos_cursos.png') no-repeat center center;
+	background-size: 100%;
+	margin: auto;
+	height:460px;
+	width: 1366px;
+}
+
+
+#cursos h3{
+	font-family: "Blanch Caps";
+	color: #071D2B;
+	font-size: 3em;
+}
+
+#cursos p{
+	font-family: "Aleo Light";
+	color: #444242;
+	line-height: 1.2;
+	font-size: .8em;
+}
+
+.disabled{
+	opacity: 0.3;
+}
+
+#more {
+	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+	padding-bottom: 70px;
+}
+
+#more p{
+	font-family: "Blanch Caps Light";
+	color: #071D2B;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	line-height: .95;
+}
+
+#more .strong{
+	font-family: "Blanch Caps";
+	color: #071D2B;
+	font-size: 2em;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+
+#more .strong .blue{
+	color: #598DBD;
+}
+
+#footer{
+	margin: 0 auto 0 auto;
+	position: relative;
+	display: block;
+}
+
+#dispositivos {
+	background-image: url('../assets/dispositivos.png');
+	width: 215px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#dispositivos:hover{
+	background-image: url('../assets/dispositivos_hover.png');
+	width: 200px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#califica {
+	background-image: url('../assets/califica.png');
+	margin: 0 auto;
+	width: 215px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#califica:hover{
+	background-image: url('../assets/califica_hover.png');
+	width: 200px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#envia {
+	background-image: url('../assets/envia.png');
+	width: 215px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#envia:hover{
+	background-image: url('../assets/envia_hover.png');
+	width: 200px;
+	height: 215px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
