@@ -11,3 +11,11 @@ $(function(){
 	}
 	setInterval(refresh, 10000);
 });
+
+$(document).ready(function() {
+  $('#openModal form .button').click(function(){
+        var Agregar = $('input[name=Usuario]').val();
+        $('#navigation nav ul').append('<li><a class="nombreusuario" href="">' + Agregar+'</a></li>');
+        $('#navigation nav ul li:nth-child(4)').addClass('quitarparausuario')
+    });
+})
