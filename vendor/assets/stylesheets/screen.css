@@ -133,7 +133,7 @@
 }
 
 #openModal form .button:hover {
-	background-color: rgba(54, 120, 161);
+	background-color: rgba(54, 120, 161, 0);
 }
 
 
