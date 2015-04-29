@@ -269,16 +269,6 @@ nav ul li a:hover {
 	color:#639ecb;
 }
 
-.nombreusuario {
-  color:#639ecb;
-  font-size:1.9em;
-  display:inline;
-}
-
-.quitarparausuario {
-  display: none;
-}
-
 nav ul li ul { 
 	display:none;
 }
@@ -296,12 +286,12 @@ nav ul li ul {
 	display: none;
 }
 
-#search form input::-webkit-search-cancel-button{
+form input::-webkit-search-cancel-button{
     position:relative;
     right:5px;  
 }
 
-#search form input:first-child {
+form input:first-child {
 	height: 25px;
 	width: 159px;
 	border: none;
@@ -316,12 +306,12 @@ nav ul li ul {
 	
 }
 
-#search form input:first-child:focus {
+form input:first-child:focus {
 	outline: 0; /* Quitar el borde cuando se encuentra activo el elemento input*/
 }
 
 
-#search form input:nth-child(2) {
+form input:nth-child(2) {
 	border: none;
 	background: url('../assets/Buscar_MP.png') no-repeat;
 	height: 28px;
@@ -331,7 +321,7 @@ nav ul li ul {
 	padding-bottom: 11px;
 }
 
-#search form input:nth-child(2):focus {
+form input:nth-child(2):focus {
 	outline: 0; /* Quitar el borde cuando se encuentra activo al elemento input*/
 }
 
@@ -416,13 +406,12 @@ nav ul li ul {
 	width: 75%;
 }
 
-#encabezado{
-	position: absolute;
+.encabezado{
+	position: fixed;
 	width: 1349px;
 	height: 70px;
-	/*z-index:1;*/
+	z-index:1;
 	background-color:white;
-  
 }
 
 .resaltar {
@@ -817,4 +806,3 @@ background: url(../assets/gafas.png) no-repeat center;
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
-
