@@ -2,16 +2,80 @@
 <html>
   <head>
     <title>Solvingbooks</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/transition.js"></script>
+    
   </head>
   <body>
+  	<header>
+  		<div class="container">
+  			<nav class="navbar">
+  				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1><a href="/">SolvingBooks</a></h1>
+					</div>
 
-  <%= yield %>
+					<div class="collapse navbar-collapse" id="navbar-1">
+						<form action="" class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+							<div class="form-group">
+								<input type="search" class="form-control" placeholder="">
+								<input type="submit" value=""/>
+							</div>
+						</form>
+						<h2>Navigation</h2>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Acerca de</a></li>
+							<li><a href="#">Cursos</a></li>
+							<li><a href="#">Contáctenos</a></li>
+							<li><a href="#openModal">Ingresar</a></li>							
+						</ul>
+					</div>
+				</div>
+  			</nav>
+  		</div>	
+  	</header>
+  	<div id="openModal" class="modalDialog"><div>
+	    <a href="#close" title="Close" class="close">X</a>
+	    <h2>Modal Box</h2>
+	    <form id="ingresar">
+	        <h3>INGRESAR</h3>
+	        <h3>USUARIO</h3>
+	        <input type="text" name="Usuario" placeholder=""/>
+	        <h3>CONTRASEÑA</h3>
+	        <input type="password" name="password" placeholder=""/>
+	        <input id="check" type="checkbox"/>
+	        <span class="recordar">Recordar datos.</span>
+	        <p><a class="button" href="#close">INGRESAR</a></p>
+	        <span class="negrilla1">¿Eres nuevo en nuestra comunidad?</span>
+	        <strong class="negrilla">Regístrate.</strong>
+	  	</form>
+	  </div>
+		</div>
+
+    
+    <%= yield %>
+    
+    <%= render 'layouts/footer' %>
+    
+    
 
   </body>
-  <link href='assets/screen.css' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="assets/transition.js"></script>
+    
+  
+  
+
 </html>

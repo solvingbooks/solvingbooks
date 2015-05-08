@@ -33,8 +33,8 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-gem 'foundation-rails', '5.4.3.1'
-
+# gem 'foundation-rails', '5.4.3.1'
+  gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

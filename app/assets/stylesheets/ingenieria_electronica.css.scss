@@ -1,0 +1,128 @@
+/******************************************CSS DESCRIPCION***********************************************************
+**************************************************************************************************************************/
+
+.degradado {
+	text-align: middle;
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f0f0f0 1%, #ffffff 50%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%,#f0f0f0), color-stop(50%,#ffffff), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to right,  #f0f0f0 1%,#ffffff 50%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f0f0f0',GradientType=1 ); /* IE6-9 */
+	padding-bottom: 30px;
+}
+
+#descripcion p {
+	font-size: 1.4em;
+	line-height: 1;
+	text-align: right;
+	font-family: "Aleo Light";
+	padding-left: 4%;
+	padding-right: 6%;
+	border-right: 4px solid #0B493E;
+	border-left: 4px solid #0B493E;
+	padding-bottom: 10px;
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+
+#descripcion img {
+	height: 100%;
+	margin-right: 0px;
+	margin-top: 5%;
+	padding-bottom: 10px;
+}
+
+#descripcion #ingenieria img {
+	height: 110px;
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+
+/******************************************END CSS DESCRIPCION***********************************************************
+**************************************************************************************************************************/
+/******************************************CSS BARRA BUSCAR***********************************************************
+**************************************************************************************************************************/
+#barra_buscar {
+	background: url('../assets/ingelectronica/Barra_Búsqueda-03.png') no-repeat;
+}
+
+#barra_buscar h1 {
+	font-family: "Blanch Caps";
+	font-size: 40px;
+	text-align: right;
+	margin-top: 15px;
+}
+
+#buscar {
+	margin-top: 20px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	background-color: #E9F9F6;
+	font-size: 20px;
+	margin-right: 5px;
+	display: inline-block;
+	font-family: "Aleo Lightitalic", Arial, Helvetica, sans-serif;
+	width: 80%;
+	margin-left: 18px;
+}
+
+#bt_buscar {
+	margin-top: 20px;
+	border: none;
+	background: url('../assets/ingelectronica/bt_buscar.png') no-repeat;
+	width: 10%;
+	display: inline-block;
+	background-size: 80%;
+	padding-bottom: 11px;	
+	padding-left: 0;
+}	
+
+ #buscar:focus{
+	box-shadow:none;	
+}
+
+#bt_buscar:focus {
+	outline: none; 
+}
+
+#organizar h1 {
+	font-family: "Blanch Caps";
+	font-size: 40px;
+	text-align: left;
+	margin-top: 15px;
+}
+
+
+/******************************************END CSS BARRA BUSCAR***********************************************************
+**************************************************************************************************************************/
+/******************************************CSS ASIGNATURAS***************************************************
+**************************************************************************************************************************/
+
+#asignaturas img {
+	width: 90%;
+	margin-top: 25px;
+	margin-left: 5%;	
+
+}
+
+#asignaturas .row img {
+	width: 65%;
+	margin-left: 0px;
+}
+
+.disabled{
+	opacity: 0.4;
+}
+
+#sugerencia {
+	margin-bottom: 70px;
+}
+/******************************************END CSS ASIGNATURAS***************************************************
+**************************************************************************************************************************/
