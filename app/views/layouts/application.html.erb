@@ -65,17 +65,14 @@
 	  	</form>
 	  </div>
 		</div>
-
     
     <%= yield %>
     
-    <%= render 'layouts/footer' %>
-    
-    
-
-  </body>
-    
-  
-  
+    <% if current_page?('/')%>
+      <%= render 'layouts/bluefooter' %>    
+    <% else %>    
+      <%= render 'layouts/greenfooter' %>    
+    <% end %>
+    </body>
 
 </html>
