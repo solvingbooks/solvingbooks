@@ -39,7 +39,7 @@
 						<h2>Navigation</h2>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#">Acerca de</a></li>
-							<li><a href="#">Cursos</a></li>
+							<li><a href="/#cursos">Cursos</a></li>
 							<li><a href="#">Contáctenos</a></li>
 							<li><a href="#openModal">Ingresar</a></li>							
 						</ul>
@@ -48,24 +48,44 @@
   			</nav>
   		</div>	
   	</header>
-  	<div id="openModal" class="modalDialog"><div>
-	    <a href="#close" title="Close" class="close">X</a>
-	    <h2>Modal Box</h2>
-	    <form id="ingresar">
-	        <h3>INGRESAR</h3>
-	        <h3>USUARIO</h3>
-	        <input type="text" name="Usuario" placeholder=""/>
-	        <h3>CONTRASEÑA</h3>
-	        <input type="password" name="password" placeholder=""/>
-	        <input id="check" type="checkbox"/>
-	        <span class="recordar">Recordar datos.</span>
-	        <p><a class="button" href="#close">INGRESAR</a></p>
-	        <span class="negrilla1">¿Eres nuevo en nuestra comunidad?</span>
-	        <strong class="negrilla">Regístrate.</strong>
-	  	</form>
-	  </div>
-		</div>
+  	<div id="openModal" class="modalDialog">
+  		<div>
+		    <a href="#close" class="close">X</a>
+		    <h2>Modal Box</h2>
+		    <form id="ingresar">
+		        <h3>INGRESAR</h3>
+		        <h3>CORREO</h3>
+		        <input type="text" name="Usuario" placeholder=""/>
+		        <h3>CONTRASEÑA</h3>
+		        <input type="password" name="password" placeholder=""/>
+		        <input id="check" type="checkbox"/>
+		        <span class="recordar">Recordar datos.</span>
+		        <p><a class="button" href="#close">INGRESAR</a></p>
+		        <span class="negrilla1">¿Eres nuevo en nuestra comunidad?</span>
+		        <strong class="negrilla"  ><a href="#openModalrg">Regístrate.</a></strong>
+	  		</form>
+	  	</div>
+	</div>    
     
+  <div id="openModalrg" class="modalDialogrg">
+  		<div>
+		    <a href="#closerg"  class="closerg">X</a>		    
+		    <form id="registrar">
+		        <h3>REGÍSTRATE</h3>
+		        <h3>NOMBRE</h3>
+		        <input type="text" name="Usuario" placeholder=""/>
+		        <h3>CORREO</h3>
+		        <input type="text" name="password" placeholder=""/>
+		        <h3>CONTRASEÑA</h3>
+		        <input type="password" name="password" placeholder=""/>
+		        <h3>CONFIRMAR CONTRASEÑA</h3>
+		        <input type="password" name="password" placeholder=""/>
+		        <p><a class="button" href="#closerg">Registrarse</a></p>
+		        <span class="negrilla1">¿Ya tienes una cuenta?</span>
+          <strong  class="negrilla"><a href="#openModal">¡Ingresa ya!</a></strong>
+	  		</form>
+	  	</div>
+	</div>
     <%= yield %>
     
     <% if current_page?('/')%>
